@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Resume Builder</title>
+</head>
+<body>
+    <div class=" " id="toHide">
+        <div class="main-heading">
+            <h1 class="heading">RESUME BUILDER</h1>
+            <h3 class="subheading">@By Lazy Developer</h3>
+        </div>
+    <div class="form-container">    
+        <!--============ Personal Info============ -->
+        <div class="personal-section">
+            <h5 class="section-heading">
+                PERSONAL INFORMATION
+            </h5>
+            <div class="form-info">
+                <label for="name">NAME:</label>
+                <input id="nameI" type="text" placeholder="Enter your name" required>
+            </div>
+            <div class="form-info">
+                <label for="email">EMAIL:</label>
+                <input id="emailI" type="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-info">
+                <label for="number">MOBILE NUMBER:</label>
+                <input id="numberI" type="number" placeholder="Enter your mobile number" required>
+            </div>
+        </div>
+    
+        <!-- ===========Education===========-->
+        <div class="education-section container" id="educationSectionI">
+    
+    
+            <h5 class="section-heading">EDUCATION</h5>
+    
+            <div class="education-field">
+                <!-- <hr class="hr-sub"> -->
+                    <div class="form-info">
+                    <label for="text">10th BOARD:</label>
+                    <input type="text" class="edBoardI" id="edBoardI1" placeholder="enter your school name" required>
+                    </div>
+            
+                    <div class="form-info">
+                    <label for="text">PERCENTAGE:</label>
+                    <input type="text" class="edDateI" id="edPercI1" placeholder="enter your percentage" required>
+                    </div>
+                    
+                    <div class="form-info">
+                    <label for="text">YEAR OF PASSING:</label>
+                    <input type="text" class="edDateI" id="edDateI1" placeholder="enter year of passing" required>
+                    </div>
+            </div>
+            <div class="education-field">
+                <hr class="hr-sub">
+
+                    <div class="form-info">
+                    <label for="text">12th BOARD:</label>
+                    <input type="text" class="edBoardI" id="edBoardI2" placeholder="enter your intermediate school name" required>
+                    </div>
+            
+                    <div class="form-info">
+                    <label for="text">COURSE:</label>
+                    <input type="text" class="edCourseI" id="edCourseI2" placeholder="enter your course" required>
+                    </div>
+            
+                    <div class="form-info">
+                    <label for="text">PERCENTAGE:</label>
+                    <input type="text" class="edDateI" id="edPercI2" placeholder="enter your percentage" required>
+                    </div>
+                    
+                    <div class="form-info">
+                    <label for="text">YEAR OF PASSING:</label>
+                    <input type="text" class="edDateI" id="edDateI2" placeholder="enter year of passing" required>
+                    </div>
+            </div>
+            <div class="education-field">
+                <hr class="hr-sub">
+                
+                    <div class="form-info">
+                    <label for="text">UNIVERSITY:</label>
+                    <input type="text" class="edBoardI" id="edUniversityI3" placeholder="enter your school name" required>
+                    </div>
+            
+                    <div class="form-info">
+                    <label for="text">COURSE:</label>
+                    <input type="text" class="edCourseI" id="edCourseI3" placeholder="enter your course name" required>
+                    </div>
+            
+                    <div class="form-info">
+                    <label for="text">OVERALL CGPA:</label>
+                    <input type="text" class="edDateI" id="edPercI3" placeholder="enter your course start and end date" required>
+                    </div>
+                    
+                    <div class="form-info">
+                    <label for="text">DURATION:</label>
+                    <input type="text" class="edDateI" id="edDateI3" placeholder="enter your course start and end date" required>
+                    </div>
+            </div>             
+        </div>
+    
+    
+        <div class="skills-section container">
+            <h5 class="section-heading">
+                SKILLS
+            </h5>
+            
+            <div class="form-info">
+                <label for="text">LANGUAGES:</label>
+                <input type="text" id="skill1" placeholder="Enter the names of the languages, separated by commas." >
+            </div>
+            <div class="form-info">
+                <label for="text">TECHNOLOGIES:</label>
+                <input type="text" id="skill2" placeholder="Enter the names of the technology, separated by commas." >
+            </div>
+            <div class="form-info">
+                <label for="text">SOFT SKILLS:</label>
+                <input type="text" id="skill3" placeholder="Enter the names of the soft-skill, separated by commas.">
+            </div>
+        </div>
+    
+        <div class="certification-section container">
+            <h5 class="section-heading">
+                CERTIFICATION/WORKSHOPS
+            </h5>
+            <div class="certification-field">
+                <div class="form-info">
+                    <label for="text">CERTIFICATION DETAILS:</label>
+                    <input type="text" name="certificateI" class="certI" id="certI1"  placeholder="Enter certification details" rows="3" cols="43" ></input>
+                </div>
+                <div class="form-info">
+                    <label for="text">CERTIFICATION DETAILS:</label>
+                    <input type="text" name="certificateI" class="certI" id="certI1" placeholder="Enter certification details" rows="3" cols="43" ></input>
+                </div>
+                
+            </div>            
+            <div class="addButton">
+                <button onclick="addNewCertificationField()" class="button button--flex">
+                    <i class="uil uil-plus button-icon"></i>   
+                </button>
+            </div>
+        </div>
+    
+
+        <div class="experience-section container">
+            <h5 class="section-heading">
+                WORK EXPERIENCES
+            </h5>
+            <div class="experience-field">  
+                <div class="form-info display">
+                    <label for="text">WORK DETAILS:</label>
+                    <textarea type="text" class="exWorkI" id="exWorkI1" rows="3" cols="43" placeholder="Enter your work details"></textarea>
+                </div>           
+                <div class="form-info display">
+                    <label for="text">WORK DETAILS:</label>
+                    <textarea type="text" class="exWorkI" id="exWorkI1" rows="3" cols="43" placeholder="Enter your work details"></textarea>
+                </div>           
+                <div class="form-info display">
+                    <label for="text">WORK DETAILS:</label>
+                    <textarea type="text" class="exWorkI" id="exWorkI1" rows="3" cols="43" placeholder="Enter your work details"></textarea>
+                </div>           
+            </div>
+            <div class="addButton">
+                <button onclick="addNewExpField()" class="button button--flex">
+                        <i class="uil uil-plus button-icon"></i>
+                </button>
+            </div>  
+        </div>
+    
+    
+        <div class="addButton">
+            <button onclick="generateResume()" class="button button--flex">
+                <i class="button-icon">
+                    Generate Resume! 
+                </i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- ==============RESUME=================================================== -->
+<div class="" id="resSection">
+    <div class="resume-main">
+
+        <div class="res-personal-info">
+            <div class="res-nameT" id="nameT">
+                Your Name
+            </div>
+            <div class="res-info">
+                <div class="res-emailT" id="emailT">
+                    yourEmail@gmail.com
+                </div>
+                <div class="res-numberT" id="numberT">
+                   | +91 9999999999
+                </div>
+            </div>       
+        </div>
+
+
+        <div class="res-education res-section">
+            <h2 class="res-heading">EDUCATION</h2>
+            <hr>
+            <div class="res-content res-grid">
+                <div class="res-left">
+                    <div  class="res-eBoardT" id="eBoardT1">10th Board</div>
+                </div>
+                <div class="res-right">
+                    <div class="percT" id="percT1">
+                        90%
+                    </div>
+                    <div class="eDateT" id="eDateT1">
+                    2017    
+                    </div>
+                </div>
+            </div>
+            <div class="res-content res-grid">
+                    <div class="res-left">
+                        <div  class="res-eBoardT" id="eBoardT2">12th Board</div>
+                        <div class="res-eCourseT" id="eCourseT2">PCM</div>
+                    </div>
+                    <div class="res-right">
+                        <div class="percT" id="percT2">
+                            80%
+                        </div>
+                        <div class="eDateT" id="eDateT2">
+                        2019    
+                        </div>
+                </div>
+            </div>
+            <div class="res-content res-grid">
+                    <div class="res-left">
+                        <div  class="res-eBoardT" id="eBoardT3">University Name</div>
+                        <div class="res-eCourseT" id="eCourseT3">Bachelor of laziness</div>
+                    </div>
+                    <div class="res-right">
+                        <div class="percT" id="percT3">
+                            9CGPA
+                        </div>
+                        <div class="eDateT" id="eDateT3">
+                        2020-2024    
+                        </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="res-skills res-section">
+            <h2 class="res-heading">
+                SKILLS
+            </h2>
+            <hr>
+            <div class="res-content">
+                <div>
+                    <span><strong>LANGUAGES: </strong> </span><div class="sub-skill res-languages" id="sLanguagesT">C, JAVA, PYTHON</div>
+                </div>
+                <div>
+                    <span> <strong>TECHNOLOGIES:</strong> </span><div class="sub-skill res-technologies" id="sTechnologyT"> WEB DEV, JAVA DEVELOPMENT </div>
+                </div>
+                <div>
+                    <span> <strong>SOFT SKILLS:</strong> </span><div class="sub-skill res-soft-skills" id="sSoftSkillT" >PUBLIC SPEAKING, LEADERSHIP AND MORE</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="res-certification res-section">
+            <h2 class="res-heading">
+                CERTIFICATION/WORKSHOPS
+            </h2>
+            <hr>
+
+            <ul class="res-content" id="cCertificateT">
+                <li id="certT1">Certificate of Proficiency in Advanced Data Analytics</li>
+                <li id="certT2">Certificate in Web Development and Front-End Design</li>
+            </ul>
+        </div>
+
+
+
+        <div class="res-experience res-section">
+            <h2 class="res-heading">
+                EXPERIENCES
+            </h2>
+            <hr>
+            <div class="res-content"> 
+                <ul  id="eWorkDescI">
+                    <li class="res-eWorkDesc" id="exWorkT1">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Ab iusto aut officia beatae sint nemo tenetur veniam sol
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione atque sed at! Consectetur, hic praesentium?
+                    </li>        
+                    <li class="res-eWorkDesc" id="exWorkT2">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Ab iusto aut officia beatae sint nemo tenetur veniam sol
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione atque sed at! Consectetur, hic praesentium?
+                    </li>        
+                    <li class="res-eWorkDesc" id="exWorkT3">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Ab iusto aut officia beatae sint nemo tenetur veniam sol
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione atque sed at! Consectetur, hic praesentium?
+                    </li>        
+                    <li class="res-eWorkDesc" id="exWorkT4">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Ab iusto aut officia beatae sint nemo tenetur veniam sol
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione atque sed at! Consectetur, hic praesentium?
+                    </li>        
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="res-addButton">
+        <button onclick="download()" class="res-button res-button--flex">
+            <i class="res-button-icon">
+                PRINT RESUME 
+            </i>
+        </button>
+    </div>
+</div>
+
+    
+    
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.to-hide{
+  display: none;
+}
+.to-show{
+  display: block;
+}
+
+html {
+ scroll-behavior: smooth;
+}
+body{
+    /* background-color: #E6FFFD; */
+    background-color: #1F6E8C;
+ color: #DAFFFB;
+ font-family: 'Times New Roman', Times, serif;
+  /* font-family: "Poppins", sans-serif; */
+}
+*::placeholder {
+  color: black;
+  font-size: 0.8rem;
+  padding: 0.7rem; /* Replace with your desired color */
+ font-family: 'Times New Roman', Times, serif;
+  
+}
+i{
+  /* text-decoration: none; */
+  /* font-family: 'Times New Roman', Times, serif; */
+  font-style:initial;
+}
+
+
+a{
+  text-decoration: none;
+  color:#DAFFFB
+}
+h1{
+    font-size: 1.9rem;
+}
+h3{
+    font-size: 0.9rem;
+}
+
+input{
+    border: 0.2rem solid black;
+    border-radius: 4px;
+    padding: 7px;
+    margin: 0.1rem;
+    width: 20rem;
+}
+
+label {
+    width: 5rem;
+    text-align: center;
+    margin-right: 3rem;
+  }
+
+  .form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.7),
+              0 0 12px rgba(255, 255, 255, 0.5),
+              0 0 24px rgba(255, 255, 255, 0.3);
+
+    margin: 4rem 8rem;
+    border-radius: 5px;
+}
+
+textarea{
+  border: 0.2rem solid black;
+    border-radius: 4px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1.5rem ;
+}
+
+
+.main-heading{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.heading{
+    font-size: 3rem;
+    /* color: #1F6E8C; */
+}
+.subheading{
+    font-style: italic;
+}
+
+.section-heading{
+    font-size: 2rem;
+    margin: 1rem auto 0.1rem 0.1rem;
+    color: #000000;
+
+}
+
+.form-info{
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+}
+
+.display{
+  margin: 0.4rem auto;
+}
+
+/*=========Button======== */
+.addButton{
+    margin-bottom: 2rem;
+}
+
+.button {
+    background-color: white;
+    color: #3AA6B9;
+ font-family: 'Times New Roman', Times, serif;
+
+    padding: 0.4rem 0.6rem;
+    border-color: #3AA6B9;
+    border-radius: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .button:hover {
+    background-color: #3AA6B9;
+    color: white;
+
+  }
+  
+  .button-icon { 
+    color: #3AA6B9;
+    font-size: 1.2rem;
+    transition: 0.3s;
+  }
+  .button-icon:hover { 
+    color: white;
+    
+  }
+  
+  
+  .button--flex {
+    display: inline-flex;
+    align-items: center;
+    transition: 0.3s;
+  }
+/*=========Button======== */
+
+
+
+
+
+
+
+
+/* RESUME CSS */
+hr{
+  border:0.1px solid black ;
+  width: 97%;
+  margin: 0 auto;
+}
+/* Reusable classes */
+.resume-section{
+  display: none;
+}
+.hr-sub{
+  border: 0.1px solid white;
+  width: 80%;
+}
+.res-section{
+  margin: 1rem 0.1rem 0;
+}
+.res-a{
+  color:black
+}
+.res-heading{
+  margin: 0.7rem 0.1rem 0.1rem 0.5rem;
+}
+
+.res-content {
+  margin: 0.5rem 0.1rem 0.1rem 1.5rem;
+
+}
+.res-left{
+  width: 83%;
+}
+
+.res-right{
+  width: 17%;
+}
+
+.res-grid{
+  display: flex;
+}
+
+/* .res-eWorkDesc{
+  margin: 0 auto 0.8rem;
+} */
+.res-eWorkDesc{
+  margin: 0.3rem 0.8rem;
+}
+
+/* Reusable classes */
+.resume-main{
+  width: 38rem;
+  height: 53rem;
+  /* background-color: rgb(216, 216, 242); */
+  background-color: #F9F5F6;
+  position: relative;
+  margin: 0.5rem auto 0.5rem;
+  color: black;
+  
+
+}
+
+.res-personal-info{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem auto 0.3rem;
+}
+.res-info{
+  display: flex;
+  align-items: center;
+  column-gap: 0.4rem;
+}
+.res-nameT{
+  font-size: 2.3rem;
+}
+.sub-skill{
+ display: inline; 
+}
+
+/*=========Button======== */
+.res-addButton{
+  margin: 2rem auto 0;
+  width: 20%;
+}
+
+.res-button {
+  background-color: rgb(0, 0, 0);
+  color: #f4f4f4;
+font-family: 'Times New Roman', Times, serif;
+
+  padding: 0.4rem 0.6rem;  
+  border-radius: 0.5rem;
+  font-weight: 500;
+  margin: 2rem auto;
+}
+
+.res-button:hover {
+  background-color: #425c60;
+  color: white;
+
+}
+
+.res-button-icon { 
+  color: #efefef;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+
+
+.res-button--flex {
+  display: inline-flex;
+  align-items: center;
+  transition: 0.3s;
+}
+/*=========Button======== */
